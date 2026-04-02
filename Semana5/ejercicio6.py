@@ -13,7 +13,13 @@ def total_ventas_ciclo(ventas):
     Retorna el total de ventas usando ciclos.
     """
     # Escriba aquí su solución
-    pass
+    resultado = 0
+    for ventas in ventas:
+        resultado = resultado + ventas
+    return resultado
+
+venta1 = [100000,100000]
+print(total_ventas_ciclo(venta1))
 
 
 def total_ventas_recursivo(ventas):
