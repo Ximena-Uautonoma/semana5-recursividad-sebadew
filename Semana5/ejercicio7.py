@@ -26,5 +26,13 @@ def ahorro_total_recursivo(ahorros):
     """
     Retorna el ahorro total usando recursividad.
     """
-    if ahorros:
+    if len(ahorros) == 0:
+        return 0
+    else: 
+        return ahorros[0] + ahorro_total_recursivo(ahorros[(0+1):])
+
+ahorros2 = [120000, 130000,125000,100000]
+print(ahorro_total_recursivo(ahorros2))
+
+
 

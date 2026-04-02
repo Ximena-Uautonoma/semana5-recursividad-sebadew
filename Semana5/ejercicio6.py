@@ -27,4 +27,10 @@ def total_ventas_recursivo(ventas):
     Retorna el total de ventas usando recursividad.
     """
     # Escriba aquí su solución
-    pass
+    if len(ventas) == 0:
+        return 0
+    else:
+        return ventas[0] + total_ventas_recursivo(ventas[(0+1):])
+
+venta2 = [100000,100000,150000]
+print(total_ventas_recursivo(venta2))
